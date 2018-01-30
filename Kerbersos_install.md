@@ -68,8 +68,10 @@ systemctl enable kadmin
 ```
 
 
-#V erify
+# Verify
+```bash
 kadmin -p admin/admin@EXAMPLE.COM
 
 On Hadoop enter username: admin/admin
 Domain name:EXAMPLE.COM
+```

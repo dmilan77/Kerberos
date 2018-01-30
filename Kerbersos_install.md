@@ -42,23 +42,23 @@ includedir /etc/krb5.conf.d/
  example.com = EXAMPLE.COM
 
 ```
-#Create the Kerberos Database
+# Create the Kerberos Database
 ```bash
 
 kdb5_util create -s
 ```
-#Create a Kerberos Admin
+# Create a Kerberos Admin
 ```bash
 kadmin.local -q "addprinc admin/admin"
 ```
 
-#Edit ACL file
+# Edit ACL file
 `vi /var/kerberos/krb5kdc/kadm5.acl`
 
 ```
 */admin@EXAMPLE.COM     *
 ```
-#Restart and enable on reboot
+# Restart and enable on reboot
 
 ```bash
 systemctl start krb5kdc
@@ -68,7 +68,7 @@ systemctl enable kadmin
 ```
 
 
-#Verify
+#V erify
 kadmin -p admin/admin@EXAMPLE.COM
 
 On Hadoop enter username: admin/admin

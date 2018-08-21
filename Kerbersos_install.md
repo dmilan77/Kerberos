@@ -28,6 +28,9 @@ includedir /etc/krb5.conf.d/
  renew_lifetime = 7d
  forwardable = true
  rdns = false
+ max_life = 1d  
+ max_renewable_life = 7d
+ kdc_tcp_ports = 88
  default_realm = EXAMPLE.COM
  default_ccache_name = KEYRING:persistent:%{uid}
 
